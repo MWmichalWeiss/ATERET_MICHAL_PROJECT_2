@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATERET_MICHAL_SCHEDULE", "ATERET_MICHAL_SCHEDULE\ATERET_MICHAL_SCHEDULE.csproj", "{87AC0D03-8829-4D9F-A49A-BADF0E212EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATERET_MICHAL_SCHEDULE", "ATERET_MICHAL_SCHEDULE\ATERET_MICHAL_SCHEDULE.csproj", "{87AC0D03-8829-4D9F-A49A-BADF0E212EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{096E11CA-DDFC-4776-940A-6C109DEE2BBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{87AC0D03-8829-4D9F-A49A-BADF0E212EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87AC0D03-8829-4D9F-A49A-BADF0E212EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87AC0D03-8829-4D9F-A49A-BADF0E212EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096E11CA-DDFC-4776-940A-6C109DEE2BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096E11CA-DDFC-4776-940A-6C109DEE2BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096E11CA-DDFC-4776-940A-6C109DEE2BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096E11CA-DDFC-4776-940A-6C109DEE2BBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

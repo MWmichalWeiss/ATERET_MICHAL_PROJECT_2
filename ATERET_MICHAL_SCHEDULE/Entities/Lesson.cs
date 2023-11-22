@@ -2,7 +2,7 @@
 {
     public class Lesson
     {
-        public int Id { get; set; }
+        public int Id { get; }
         public string Subject { get; set; }
         public int timesInWeek { get; set; }
         public int LessonCost { get; set; }

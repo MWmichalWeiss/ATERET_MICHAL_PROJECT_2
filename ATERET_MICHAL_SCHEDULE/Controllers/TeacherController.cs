@@ -9,26 +9,26 @@ namespace ATERET_MICHAL_SCHEDULE.Controllers
     [ApiController]
     public class TeacherController : ControllerBase
     {
-        private DataContext dataContext;
-        public TeacherController(DataContext data)
+        private IDataContext dataContext;
+        public TeacherController(IDataContext data)
         {
             dataContext= data;
         }
         // GET: api/<TeacherController>
         [HttpGet]
-        public IEnumerable<Teacher> Get()
+        public IActionResult Get()
         {
-            return dataContext.TeacherList;
+            return Ok(dataContext.TeacherList);
         }
 
         // GET api/<TeacherController>/5
         [HttpGet("{id}")]
-        public ActionResult<Teacher> Get(int id)
+        public IActionResult Get(int id)
         {
             var teacher = dataContext.TeacherList.Find(e => e.Id == id);
             if(teacher==null)
                 return NotFound();
-            return teacher;
+            return Ok(teacher);
         }
         [HttpGet("{id},{subject}")]
         public ActionResult<int> Get(int id, string subject)
