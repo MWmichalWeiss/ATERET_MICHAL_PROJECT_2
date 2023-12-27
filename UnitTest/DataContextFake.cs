@@ -1,5 +1,6 @@
 ﻿using ATERET_MICHAL_SCHEDULE.Entities;
 using CsvHelper;
+using DevExpress.XtraPrinting;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -11,7 +12,7 @@ namespace UnitTest
 {
     public class DataContextFake:IDataContext
     {
-        public List<Teacher> TeacherList { get; set; }
+        public List<Tracer> TeacherList { get; set; }
         public List<TheClass> ClassList { get; set; }
         public List<Lesson> LessonList { get; set; }
         public DataContextFake()

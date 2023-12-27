@@ -1,16 +1,22 @@
-﻿using System.Formats.Asn1;
+﻿using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.Globalization;
 using CsvHelper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 
 namespace ATERET_MICHAL_SCHEDULE.Entities
 {
-    public class DataContext : IDataContext
+    public class DataContext : DbContext
     {
-        public List<Teacher> TeacherList { get; set; }
-        public List<Lesson> LessonList { get; set; }
-        public List<TheClass> ClassList { get; set; }
+        public DbSet<Teacher> TeacherList { get; set; }
+        public DbSet<Lesson> LessonList { get; set; }
+        public DbSet<TheClass> ClassList { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=sample_db");
+        }
 
 
         public DataContext()
